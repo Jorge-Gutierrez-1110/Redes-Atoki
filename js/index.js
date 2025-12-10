@@ -22,3 +22,26 @@ fetch(apiUrl)
         console.error('Error al obtener el video:', error);
         document.getElementById('loading-text').innerText = "No se pudo cargar el video.";
     });
+
+const twitchUser = 'atoki_1110';
+const twitchApiUrl = `https://decapi.me/twitch/uptime/${twitchUser}`;
+
+        fetch(twitchApiUrl)
+            .then(response => response.text())
+            .then(data => {
+                console.log("Estado Twitch:", data);
+
+                if (!data.includes("offline")) {
+                    const twitchBtn = document.querySelector('.twitch');
+                    
+                    if (twitchBtn) {
+                        twitchBtn.innerHTML = '<i class="fab fa-twitch"></i> 🔴 ¡ESTOY EN VIVO!';
+                        
+                        twitchBtn.classList.add('live-mode');
+                        
+                        const linksContainer = document.querySelector('.links');
+                        linksContainer.prepend(twitchBtn);
+                    }
+                }
+            })
+            .catch(err => console.error('Error Twitch:', err));

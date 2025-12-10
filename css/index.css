@@ -112,8 +112,31 @@ p {
     height: 100%;
 }
 
+
+
+.live-mode {
+    background-color: #9146ff !important;
+    border: 2px solid #ff0000 !important;
+    color: white !important;
+    font-weight: 800;
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 10px 10px rgba(255, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+
 footer {
     margin-top: 40px;
     font-size: 0.8rem;
     color: #555;
 }
+
