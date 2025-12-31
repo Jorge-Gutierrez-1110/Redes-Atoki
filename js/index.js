@@ -33,7 +33,8 @@ fetch(twitchApiUrl)
             const twitchBtn = document.querySelector('.twitch');
 
             if (twitchBtn) {
-                twitchBtn.innerHTML = '<i class="fab fa-twitch"></i> 🔴 ¡ESTOY EN VIVO!';
+                twitchBtn.innerHTML = '<i class="fab fa-twitch"></i> <span>🔴 ¡ESTOY EN VIVO!</span>';
+                
                 twitchBtn.classList.add('live-mode');
 
                 const linksContainer = document.querySelector('.links');

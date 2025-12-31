@@ -8,64 +8,113 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/icon me.png">
+
+    <meta property="og:title" content="Atoki - Streamer & Dev">
+    <meta property="og:description" content="Dashboard oficial: Streams, Setup y Proyectos.">
+    <meta property="og:image" content="https://redes-atoki.vercel.app/img/icon me.png">
 </head>
 
 <body>
 
-    <div class="container">
-        <header class="profile">
-            <div class="avatar-container">
-                <img src="img/icon me.png" alt="Foto de perfil" class="avatar">
+    <div class="main-grid">
+
+        <aside class="sidebar card">
+            <header class="profile">
+                <div class="avatar-container">
+                    <img src="img/icon me.png" alt="Foto de perfil Atoki" class="avatar">
+                </div>
+                <h1>Atoki</h1>
+                <p class="role">Creador &bull; Streamer &bull; Dev</p>
+            </header>
+
+            <div class="links">
+                <a href="https://www.twitch.tv/atoki_1110" target="_blank" rel="noopener noreferrer"
+                    class="link-btn twitch">
+                    <i class="fab fa-twitch"></i> <span>Twitch</span>
+                </a>
+                <a href="https://www.youtube.com/@Atoki_1110" target="_blank" rel="noopener noreferrer"
+                    class="link-btn youtube">
+                    <i class="fab fa-youtube"></i> <span>YouTube</span>
+                </a>
+                <a href="https://x.com/i_cant_joel" target="_blank" rel="noopener noreferrer" class="link-btn twitter">
+                    <i class="fab fa-x"></i> <span>Twitter</span>
+                </a>
+                <a href="https://www.instagram.com/i.cant.joel/" target="_blank" rel="noopener noreferrer"
+                    class="link-btn instagram">
+                    <i class="fab fa-instagram"></i> <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@atoki_1110" target="_blank" rel="noopener noreferrer"
+                    class="link-btn tiktok">
+                    <i class="fab fa-tiktok"></i> <span>TikTok</span>
+                </a>
+
+                <div class="divider"></div>
+
+                <a href="https://portafolio-jg-1110.vercel.app/blog" target="_blank" rel="noopener noreferrer"
+                    class="link-btn blog">
+                    <i class="fas fa-pen-nib"></i> <span>Leer mi Blog Personal</span>
+                </a>
             </div>
-            <h1>Atoki</h1>
-            <p>Creador de contenido | Streamer | Desarrollador de Software</p>
-        </header>
+        </aside>
 
-        <div class="links">
-            <a href="https://www.twitch.tv/atoki_1110" target="_blank" class="link-btn twitch">
-                <i class="fab fa-twitch"></i> Canal de Twitch
-            </a>
+        <main class="content-area">
 
-            <a href="https://www.youtube.com/@Atoki_1110" target="_blank" class="link-btn youtube">
-                <i class="fab fa-youtube"></i> Canal de YouTube
-            </a>
-
-            <a href="https://x.com/i_cant_joel" target="_blank" class="link-btn twitter">
-                <i class="fab fa-x"></i> Twitter
-            </a>
-
-            <a href="https://www.instagram.com/i.cant.joel/" target="_blank" class="link-btn instagram">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-
-            <a href="https://www.tiktok.com/@atoki_1110" target="_blank" class="link-btn tiktok">
-                <i class="fab fa-tiktok"></i> TikTok
-            </a>
-        </div>
-
-        <div class="latest-video">
-            <h2>🎥 Mi Último Video</h2>
-            <p id="loading-text" style="font-size: 0.8rem; color: #666;">Buscando último video...</p>
-
-            <div class="video-container">
-                <iframe id="youtube-frame" width="560" height="315" src="" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="card video-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-play-circle"></i> Último Video</h2>
+                    <span id="loading-text" style="font-size: 0.7rem; color: #666;">Cargando...</span>
+                </div>
+                <div class="video-container">
+                    <iframe id="youtube-frame" width="560" height="315" src="" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
 
-        <div class="blog-section">
-            <a href="https://portafolio-gi06.onrender.com/blog" target="_blank" class="link-btn blog">
-                <i class="fas fa-pen-nib"></i> Leer mi Blog Personal
-            </a>
-        </div>
+            <div class="info-grid">
 
-        <footer>
-            <p>© 2025 Atoki. Todos los derechos reservados.</p>
-        </footer>
+                <div class="card schedule-card">
+                    <h3><i class="far fa-clock"></i> Horario de Streams</h3>
+
+                    <div class="alert-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p><strong>ESTADO ACTUAL: VACACIONES</strong><br>
+                            Hago stream cuando mi alma y el internet lo permiten. Horarios aleatorios.</p>
+                    </div>
+
+                    <div class="schedule-list">
+                        <p class="subtitle">Horario Base:</p>
+                        <ul>
+                            <li><strong>Mar:</strong> 21:30 - 23:30</li>
+                            <li><strong>Vie:</strong> 22:30 - 02:00</li>
+                            <li><strong>Sáb:</strong> 16:00 - 20:00 <span class="dim">ó</span> 20:00 - 00:00</li>
+                            <li><strong>Dom:</strong> 17:00 - 21:00</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card setup-card">
+                    <h3><i class="fas fa-microchip"></i> Hardware Specs</h3>
+                    <ul class="specs-list">
+                        <li><span>CPU</span> <strong>Ryzen 5 5600X</strong></li>
+                        <li><span>GPU</span> <strong>ASUS RTX 5060</strong> <small>(8GB GDDR7)</small></li>
+                        <li><span>RAM</span> <strong>32GB Patriot Viper</strong> <small>(3600MHz)</small></li>
+                        <li><span>SSD</span> <strong>1TB NVMe Lenovo</strong></li>
+                        <li><span>MoBo</span> <strong>Gigabyte A520M K V2</strong></li>
+                        <li><span>Case</span> <strong>Munfrost Fulgor White</strong></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <footer>
+                <p>© 2025 Atoki. Todos los derechos reservados.</p>
+            </footer>
+        </main>
     </div>
 
     <script src="js/index.js"></script>
-
 </body>
+
 </html>
